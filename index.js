@@ -20,13 +20,21 @@ function logExercise(exerciseType, duration, sets, reps, weight) {
 }
 
 // Example usage of exercise logging
-const exerciseType = "Weightlifting";
-const duration = 60; // in minutes
-const sets = 3;
-const reps = 10;
-const weight = 50; // in kilograms
+const exerciseType1 = "Weightlifting";
+const duration1 = 60; // in minutes
+const sets1 = 3;
+const reps1 = 10;
+const weight1 = 50; // in kilograms
 
-logExercise(exerciseType, duration, sets, reps, weight);
+logExercise(exerciseType1, duration1, sets1, reps1, weight1);
+
+const exerciseType2 = "Powerlifting";
+const duration2 = 90; // in minutes
+const sets2 = 5;
+const reps2 = 5;
+const weight2 = 100; // in kilograms
+
+logExercise(exerciseType2, duration2, sets2, reps2, weight2);
 
 // Update the step count and display periodically (e.g., every 5 minutes)
 setInterval(() => {
