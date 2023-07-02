@@ -13,5 +13,22 @@ function displayStepCount() {
   stepCountElement.innerText = `Today's Step Count: ${stepCount}`;
 }
 
-// Update the step count periodically (e.g., every 5 minutes)
-setInterval(displayStepCount, 300000);
+// Log exercise
+function logExercise(exerciseType, duration, sets, reps, weight) {
+  // Code to handle exercise logging, such as storing the exercise details in a database or sending them to an API
+  console.log(`Exercise logged: Type - ${exerciseType}, Duration - ${duration}, Sets - ${sets}, Reps - ${reps}, Weight - ${weight}`);
+}
+
+// Example usage of exercise logging
+const exerciseType = "Weightlifting";
+const duration = 60; // in minutes
+const sets = 3;
+const reps = 10;
+const weight = 50; // in kilograms
+
+logExercise(exerciseType, duration, sets, reps, weight);
+
+// Update the step count and display periodically (e.g., every 5 minutes)
+setInterval(() => {
+  displayStepCount();
+}, 300000);
